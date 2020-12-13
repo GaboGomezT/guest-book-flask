@@ -26,4 +26,4 @@ def get_post():
         return text, 201
 
 
-app.run(port=5000, debug=True)
+app.run(port=5000)
