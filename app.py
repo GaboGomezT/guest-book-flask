@@ -28,6 +28,3 @@ def get_post():
         text = request.get_json()
         messages.append(text)
         return text, 201
-
-
-app.run(port=5000)
