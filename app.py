@@ -16,6 +16,10 @@ app = Flask(__name__)
 # })
 messages = []
 
+@app.route('/')
+def hello_world():
+    return "hello world"
+
 @app.route('/messages', methods = ['GET', 'POST'])
 def get_post():
     if request.method == 'GET':
